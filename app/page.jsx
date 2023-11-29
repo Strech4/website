@@ -22,7 +22,7 @@ export default function Home() {
             <Card />
             <LocoComp />
         </main>
-        {/* <div className="h-screen"></div> */}
+        <div className="h-screen"></div>
     </>
   )
 }

@@ -2,10 +2,6 @@ import React, { useLayoutEffect, useRef } from 'react';
 import { Mail, Github } from "lucide-react";
 import Link from 'next/link';
 
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
-
 export const Header = () => {
 
     const IconSize = 22;
@@ -21,23 +17,23 @@ export const Header = () => {
             <header className='px-4 sm:px-0 container mx-auto flex flex-col justify-center items-left mt-40'>
                 <div className='uppercase font-bold'>
                     <h2 className='text-low-contrast text-xl sm:text-2xl md:text-3xl lg:text-4xl'
-                        data-scroll data-scroll-speed="0.5"
+                        data-scroll data-scroll-speed="0.4"
                     >
                         Welcome to my web site
                     </h2>
                     <h1 className='text-high-contrast text-4xl sm:text-6xl md:text-7xl lg:text-8xl mt-1'
-                         data-scroll data-scroll-speed="0.2"
+                         
                     >
                         my name is Léo
                     </h1>
                     <h2 className='text-low-contrast text-xl sm:text-2xl md:text-3xl lg:text-4xl'
-                        data-scroll data-scroll-speed="0.2"
+                        
                     >
                         I'm a <span className='text-high-contrast'>front-end</span> developer
                     </h2>
                 </div>
                 <div className='my-4'
-                    data-scroll data-scroll-speed="0.2"
+                    
                 >
                     <ul className='flex gap-3'>
                         {data.map((item, index) => (
@@ -52,8 +48,7 @@ export const Header = () => {
                     </ul>
                 </div>
                 <p className='text-low-contrast text-2xl sm:text-3xl md:text-4xl ld:text-5xl mt-12 lg:mt-20 mb-2 w-full md:w-3/4 font-oxy'
-                    data-scroll data-scroll-speed="0.5"
-                
+                    
                 >
                     I'm a <span className='text-high-contrast'>self-taught</span> web developer from France. Over the past three years, I've acquired the skills to design intuitive and attractive websites.
                 </p>

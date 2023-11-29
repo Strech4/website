@@ -3,6 +3,7 @@ import { Oxygen } from 'next/font/google';
 import './globals.css';
 import { useEffect, useState } from 'react';
 import { LoadingScreen } from './components/LoadingScreen';
+import { Head } from 'next/document';
 
 
 const oxygen = Oxygen({
@@ -25,7 +26,6 @@ export default function RootLayout({ children }) {
 
     return (
         <html lang="fr">
-            
             <body className={`bg-backgound ${oxygen.variable}`}>
                 {!loading ? (
                     <LoadingScreen />
