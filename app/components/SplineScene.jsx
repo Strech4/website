@@ -4,8 +4,8 @@ import Spline from '@splinetool/react-spline';
 export const SplineScene = () => {
   return (
     <Spline 
-        className="absolute top-[0%] right-0 hidden md:flex "
-        scene="https://prod.spline.design/Sju2u6YiqSE-EqWq/scene.splinecode" 
+        className="absolute top-0 right-0 "
+        scene="https://draft.spline.design/3SC66KrNRz1IhtjA/scene.splinecode" 
         
     />
   )

@@ -3,6 +3,7 @@ import { useEffect } from "react"
 import { Header } from "./components/Header";
 import { Card } from "./components/Card";
 import { LocoComp } from "./components/LocoComp";
+import { InteSpline } from "./components/InteSpline";
 
 export default function Home() {
 
@@ -21,8 +22,8 @@ export default function Home() {
         <main>
             <Card />
             <LocoComp />
+            <InteSpline />
         </main>
-        <div className="h-screen"></div>
     </>
   )
 }

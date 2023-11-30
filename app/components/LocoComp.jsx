@@ -40,7 +40,7 @@ export const LocoComp = () => {
                 </h2>
                 <div className='flex flex-wrap lg:flex-nowrap gap-4' ref={ContainerCardRef}>
                     {data.map((item, index) => (
-                        <div className='bg-gradient-to-br from-gradient-1 via-gradient-2 to-gradient-3 flex justify-center items-center rounded-lg lg:w-1/3' key={index}>
+                        <div className='bg-gradient-to-br from-gradient-1 via-gradient-2 to-gradient-3 flex justify-center items-center rounded-lg lg:w-1/3 mx-auto' key={index}>
                             <div className='w-[99%] h-[99%] rounded-lg bg-elm-bg p-5'>
                                 <div className='mb-5 flex'>
                                     <h4 className='text-high-contrast text-3xl'>
