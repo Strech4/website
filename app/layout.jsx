@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
 
     return (
         <html lang="fr">
-            <body className={`bg-backgound ${oxygen.variable}`}>
+            <body className={`bg-backgound overflow-x-hidden ${oxygen.variable}`}>
                 {!loading ? (
                     <LoadingScreen />
                 ) : (

@@ -8,13 +8,13 @@ export const Header = () => {
     const IconColor = "#C2F3FF"
 
     const data = [
-        {label: "meynardleo@gmail.com", link: "", icon: <Mail color={IconColor} size={IconSize} />},
-        {label: "Github", link: "", icon: <Github color={IconColor} size={IconSize} />},
+        {label: "meynardleo@gmail.com", link: "mailTo:meynardleo@gmail.com", icon: <Mail color={IconColor} size={IconSize} />},
+        {label: "Github", link: "https://github.com/Strech4", icon: <Github color={IconColor} size={IconSize} />},
     ]
 
     return (
         <>
-            <header className='px-4 sm:px-0 container mx-auto flex flex-col justify-center items-left mt-40'>
+            <header className='px-3 sm:px-0 container mx-auto flex flex-col justify-center items-left mt-40'>
                 <div className='uppercase font-bold'>
                     <h2 className='text-low-contrast text-xl sm:text-2xl md:text-3xl lg:text-4xl'
                         data-scroll data-scroll-speed="0.4"
@@ -37,7 +37,7 @@ export const Header = () => {
                 >
                     <ul className='flex gap-3'>
                         {data.map((item, index) => (
-                            <Link href={item.link}>
+                            <Link href={item.link} target='_blank'>
                                 <li className='text-low-contrast bg-elm-bg hover:bg-elm-hover rounded-lg py-2 px-7 flex justify-center items-center gap-2 hover:cursor-pointer transition-all' key={index}>
                                     <span>{item.icon}</span>
                                     {item.label}

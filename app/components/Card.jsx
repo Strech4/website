@@ -10,7 +10,7 @@ export const Card = () => {
             >
                 I've learned web developement
             </h1>
-            <div className='pt-5 grid grid-cols-2'
+            <div className='pt-5 grid grid-cols-2 gap-2'
             >
                 <div className='pt-5'>
                     <h2 className='text-low-contrast text-3xl'>Front-end</h2>
