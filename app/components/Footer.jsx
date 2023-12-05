@@ -19,8 +19,8 @@ export const Footer = () => {
 
     return (
         <>
-            <footer className='bg-elm-bg p-3 flex text-high-contrast w-2/4 mx-auto rounded-full mb-4'>
-                <ul className='flex justify-center text-xl w-1/3 mx-auto'>
+            <footer className='bg-elm-bg p-3 flex text-high-contrast w-3/4 md:w-2/4 mx-auto rounded-full mb-4'>
+                <ul className='flex justify-center text-xl w-1/3 mx-auto gap-4'>
                     <li onClick={creditHandleClick} className='mx-auto hover:cursor-pointer hover:underline'>Credit</li>
                     <li onClick={contactHandleClick} className='mx-auto hover:cursor-pointer hover:underline'>Contact</li>
                 </ul>
