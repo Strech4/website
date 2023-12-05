@@ -26,6 +26,9 @@ export default function RootLayout({ children }) {
 
     return (
         <html lang="fr">
+            <head>
+                <title>Léo-dev</title>
+            </head>
             <body className={`bg-backgound overflow-x-hidden ${oxygen.variable}`}>
                 {!loading ? (
                     <LoadingScreen />
